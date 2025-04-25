@@ -43,17 +43,21 @@ This project focuses on building a **machine learning model** to predict the lik
 - Plotted **Feature Importance** to identify the most influential factors.
 - Created a **Confusion Matrix** heatmap for better error analysis.
 
-## 📈 Results
+## 📈 Final Results
 
-- **Accuracy Achieved**: ~91.7%
-- **Key Insights**:
-  - Financial attributes like loan intent and homeownership had notable importance.
-  - The model performed significantly better in identifying non-defaulters than defaulters, suggesting room for improvement in handling class imbalance.
+- **Accuracy Achieved**: ~91.74%
+- **Precision for Non-Defaulters**: 0.91
+- **Recall for Non-Defaulters**: 0.99
+- **Precision for Defaulters**: 0.93
+- **Recall for Defaulters**: 0.68
+- **Overall Weighted F1-Score**: 0.91
+
+*(The model predicts non-defaults with high accuracy but could be further optimized to improve recall for defaulters.)*
 
 ## 🚀 Future Improvements
 
 - Tune hyperparameters using Grid Search or Randomized Search.
-- Apply cross-validation for more reliable performance measurement.
-- Handle class imbalance using techniques like SMOTE or class-weight adjustment.
-- Explore model interpretability using SHAP values.
-- Try alternative models like LightGBM or XGBoost for comparison.
+- Apply cross-validation for more robust validation.
+- Handle class imbalance using SMOTE or adjusting class weights.
+- Apply SHAP analysis for deeper model interpretability.
+- Try alternative models like LightGBM, XGBoost, or CatBoost.
